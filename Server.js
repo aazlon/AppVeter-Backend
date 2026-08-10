@@ -20,6 +20,7 @@ const veterinaryRoutes = require('./src/routes/VeterinaryRoutes');
 const citaRoutes = require('./src/routes/CitaRoutes');
 const notificacionRoutes = require('./src/routes/NotificacionRoutes');
 const serviceRoutes = require('./src/routes/ServiceRoutes');
+const novedadRoutes = require('./src/routes/NovedadRoutes');
 
 app.get('/', (req, res) => {
     res.send('¡Proyecto Node.js iniciado con éxito!');
@@ -35,6 +36,7 @@ veterinaryRoutes(app);
 citaRoutes(app);
 notificacionRoutes(app);
 serviceRoutes(app);
+novedadRoutes(app);
 
 module.exports = {
     app: app
